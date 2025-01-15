@@ -1,91 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <style>
-        body{
-            text-align: center;
-        }
 
-        img{
-            width: 120px;
-            height: 120px;
-            border-radius: 30%;
-            margin: 20px auto;
-        }
-             
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #51565d, #51565d);
+      font-family: Arial, sans-serif;
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+    }
 
-    </style>
+    header {
+      background-color: #51565d;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .nav-tabs .nav-link {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 5px solid #000000;
+      border-radius: 50%;
+      margin: -20px auto;
+    }
+
+    h2 {
+      color: #000000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+    
+  .container {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+  }
+
+
+    footer {
+      background-color: #dfdfdf;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    .accordion {
+      margin: 20px auto;
+    }
+
+    .accordion-item {
+      border-radius: 1px;
+      overflow: hidden;
+      border: 5px solid #dee2e6;
+      margin-bottom: 10px;
+    }
+
+    .accordion-button {
+      background-color: #e9f5ff;
+      color: #000000;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: white;
+      background-color: #51565d;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
     <h1>My Portfolio</h1>
-        <div>
-            
-            <ul class="nav nav-underline justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Skill</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Others</a>
-                </li>
-              </ul>
-              <hr>
-        </div>
-    
-    
-        <!--content-->
-                <div
-                data-bs-spy="scroll" data-bs-target="#navbar-example2" 
-                data-bs-root-margin="0px 0px -40%"
-                data-bs-smooth-scroll="true" class="scrollspy=example bg-body-tertiary p-3 rounded-2" tabindex="0">
-        
-        <!--me-->
-        <h2></h2>
-        <img src="c:\Users\ITLAB2-PC04-STUDENT\Downloads\solo-leveling-manga-manhwa-webtoon-hd-wallpaper-preview.webp" alt="Profile Picture"> 
-<hr>
+  </header>
 
-<!--About Me--> 
+  <nav>
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link " href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 
-        <h1 id="scrollspyHeading1">About Me</h1>
-        <h6>Name : Dandreb Paul D. Benalayo</h6>
-        <h6>Age : 22</h6>
-        <h6>Address : San Jose Libona Bukidnon</h6>
-        <hr>
+  <div class="container my-5">
+    <div class="text-center">
+      <img src="434208292_1663823534433310_5200065268978715215_n.jpg" alt="Profile Picture" class="profile-img">
+    </div>
 
-        <!--info-->
-        <h1 id="scrollspyHeading1">Personal Info</h1>
-        <h6>Birthplace : </h6>
-        <h6>Contact : 09551089924</h6>
-        <h6>Email : PaulBenalayo@gmail.com</h6>
-        <hr>    
-        
+    <section class="container">
+      <h2>Dandreb Paul D. Benalayo</h2>
+      <p>Hi! I'm Dandreb Paul D. Benalayo, Developer sa Scatter!</p>
+      <hr>
+    </section>
+
+    <section class="container">
+      <h2>Personal Info</h2>
+      <ul>
+        <li>Name: Dandreb Paul D. Benalayo</li>
+        <li>Age: 22</li>
+        <li>Address: San Jose Libona Bukidnon</li>
+        <li>Contact: 09551089924</li>
+        <li>Email: PaulBenalayo@gmail.com</li>
+      </ul>
+      <hr>
+    </section>
+
+    <section class="container">
+      <h2>Educational Background</h2>
+      <ul>
+        <li>Primary Education: Ninoy Aquino Elementary School</li>
+        <li>Secondary Education: Macario B. Asistio Sr. Highschool</li>
+        <li>Tertiary Education: Northern Bukidnon State College</li>
+      </ul>
+      <hr>
+    </section>
+
+    <section class="container">
+      <h2>Skills</h2>
+      <p>Creative, problem-solving, and adaptive development.</p>
+    </section>
+    <hr>
 
 
-        <!--Educ Back-->
+      <h2>CONFERENCE | TRAININGS | SEMINARS ATTENDED</h2>
 
-        <h1 id="scrollspyHeading1">Educational Background</h1>
-        <h6>Primary Education : Ninoy Aquino Elementary School</h6>
-        <h6>Secondary Education : Macario B. Asistio Sr. Highschool</h6>
-        <h6>Tertiary Education : Northern Bukidnon State College</h6>
-        <hr>
-
-        <!--skill-->
-        <h1 id="scrollspyHeading1">Skills</h1>
-        <h6>Paldo Permi sa Scatter</h6>
- 
-        
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              First Webinar | September 4, 2024
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              CAPSTONE MENTORING AND PITCH DECK EMPOWERMENT
+              <div>Where | Northern Bukidnon State College</div>
             </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Second Webinar | September 5, 2024
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              EMPOWERING BUSINESSES THROUGH DIGITAL BANKING
+              <div>Where | Northern Bukidnon State College</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Third Webinar | September 10, 2024 
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              SPARK: FAST-TRACK YOUR AICOPYWRITING SKILLS 
+              <div>Where | Session via Zoom </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+        Forth Webinar | October 5, 2024 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        5G MOBILE NETWORKS 
 
-             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        <div>Where | Session via Zoom </div>
+    
+  </div>
+</div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+      Fifth Webinar | October 12, 2024
+    </button>
+  </h2>
+  <div id="collapseTwo" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      ARTIFICIAL INTELLIGENCE/MACHINE LEARNING 
+      <div>Where | Session via Zoom </div>
+  
+      </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Fifth Webinar | October 19, 2024
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            AI ETHICS AND GOVERNANCE
+            <div>Where | Webinar Session via Zoom  </div>
+            </div>
+            </div>
+    </section>
+  <footer>
+    <p>&copy; 2025 Dandreb Paul D. Benalayo. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
